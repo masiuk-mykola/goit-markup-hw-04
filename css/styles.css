@@ -131,12 +131,38 @@ ul {
   color: var(--primary-color);
 }
 
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+.icon-mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon-smartphone {
+  width: 12px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
 /* !стиль hero */
 
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+
+  background: rgba(47, 48, 58, 0.4);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   text-align: center;
 }
 
@@ -196,7 +222,7 @@ ul {
 }
 
 .advantages-title {
-  margin-top: 0;
+  margin-top: 30px;
   margin-bottom: 10px;
 
   font-size: var(--h3-font-size);
@@ -280,6 +306,8 @@ ul {
 }
 
 .text {
+  margin-bottom: 16px;
+
   color: var(--text-color-light);
   font-size: 16px;
   font-weight: 400;
@@ -299,11 +327,86 @@ ul {
   margin-right: 30px;
 }
 
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: #afb1b8;
+  cursor: pointer;
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+  border-radius: 50%;
+}
+
+.social-link-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icon {
+  fill: currentColor;
+}
+
+/* !Стиль для Постійні клієнти */
+
+.clients-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-size: var(--h2-font-size);
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.clients-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  margin-right: 30px;
+  fill: #afb1b8;
+}
+
+.clients-item:last-child {
+  margin-right: 0px;
+}
+
+.clients-item:hover {
+  border: 1px solid #2196f3;
+  fill: #2196f3;
+}
+
 /* !стиль Футера */
 
 .footer {
   padding: 60px 0;
   background-color: var(--footer-color);
+}
+
+.footer-flex {
+  display: flex;
 }
 
 .footer .logo {
@@ -316,12 +419,8 @@ ul {
   color: var(--text-color-white);
 }
 
-.contacts-map {
-  color: var(--text-color-white);
-}
-
 .contacts-footer {
-  color: var(--text-color-light);
+  color: rgba(255, 255, 255, 0.6);
   font-size: var(--p-font-size);
   font-weight: 400;
   font-style: normal;
@@ -329,13 +428,44 @@ ul {
   letter-spacing: 0.03em;
 }
 
+.map {
+  color: var(--text-color-white);
+}
+
 .contacts-footer .item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.mail,
-.phone {
-  color: rgba(255, 255, 255, 0.6);
+.contacts-footer:hover,
+.contacts-footer:focus {
+  color: #2196f3;
+}
+.adress-wrapper {
+  margin-right: 70px;
+}
+
+.join-us-title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.wrapper-join-us {
+  display: flex;
+  list-style: none;
+}
+
+.footer-social-link {
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-link:last-child {
+  margin-right: 0px;
 }
 
 /* !Стиль для сторінки Портфоліо */
@@ -373,6 +503,10 @@ ul {
   background-color: var(--primary-color);
 }
 
+.active {
+  color: #fff;
+  background-color: var(--primary-color);
+}
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
