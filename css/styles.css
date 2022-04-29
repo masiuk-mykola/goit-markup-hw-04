@@ -242,6 +242,17 @@ ul {
   letter-spacing: 0.03em;
 }
 
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+}
+
 /* !стиль Чим ми займаємось */
 
 .no-padding {
@@ -407,6 +418,7 @@ ul {
 
 .footer-flex {
   display: flex;
+  align-items: baseline;
 }
 
 .footer .logo {
