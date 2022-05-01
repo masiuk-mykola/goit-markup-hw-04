@@ -408,7 +408,8 @@ ul {
   margin-right: 0px;
 }
 
-.client-link:hover {
+.client-link:hover,
+.client-link:focus {
   border: 1px solid #2196f3;
   fill: #2196f3;
 }
